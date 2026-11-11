@@ -1,5 +1,6 @@
 package inventory;
 
+import main.MainDashboard;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
@@ -42,7 +43,7 @@ public class InventoryFrame extends JFrame {
 
         //Form panel on the left side
         JPanel formPanel = new JPanel();
-        formPanel.setLayout(new GridLayout(10,1,5,5));
+        formPanel.setLayout(new GridLayout(11,1,5,5));
         formPanel.setBorder(new EmptyBorder(20,20,20,20));
 
         //Create text fields
@@ -76,10 +77,20 @@ public class InventoryFrame extends JFrame {
         JButton btnAdd = new JButton("Add Item");
         JButton btnUpdate = new JButton("Update Item");
         JButton btnDelete = new JButton("Delete Item");
-
+        JButton btnBack = new JButton("Back");
+        
+        
+        btnBack.addActionListener(e ->{
+            dispose();
+            //Opens main page once back is clicked
+            new MainDashboard().setVisible(true);
+        });
+        
+        //for button to show on panel
         formPanel.add(btnAdd);
         formPanel.add(btnUpdate);
         formPanel.add(btnDelete);
+        formPanel.add(btnBack);
         add(formPanel, BorderLayout.WEST);
 
         //Inventory table
