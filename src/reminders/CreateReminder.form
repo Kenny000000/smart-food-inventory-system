@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="3"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblExpiryDate" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblFoodName" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                          <Component id="TFFoodItemId" alignment="0" max="32767" attributes="0"/>
+                          <Component id="TFFoodName" alignment="0" max="32767" attributes="0"/>
+                          <Component id="TFExpiryDate" alignment="0" max="32767" attributes="0"/>
+                          <Component id="lblCreateReminderTitle" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDaysBeforeExpiry" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblReminderType" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="cmbReminderType" alignment="0" max="32767" attributes="0"/>
+                          <Group type="102" alignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" attributes="0">
+                                  <Component id="lblFoodItemId" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="btnSaveReminder" alignment="0" min="-2" pref="158" max="-2" attributes="0"/>
+                              </Group>
+                              <EmptySpace pref="103" max="32767" attributes="0"/>
+                              <Component id="btnBack" min="-2" pref="154" max="-2" attributes="0"/>
+                          </Group>
+                          <Component id="spnDaysBeforeExpiry" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="0" pref="93" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              <Component id="lblCreateReminderTitle" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
+              <Component id="lblFoodItemId" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="TFFoodItemId" min="-2" pref="34" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="lblFoodName" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Component id="TFFoodName" min="-2" pref="35" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="lblExpiryDate" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="TFExpiryDate" min="-2" pref="38" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="lblReminderType" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="cmbReminderType" min="-2" pref="42" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="lblDaysBeforeExpiry" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="spnDaysBeforeExpiry" min="-2" pref="36" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="btnSaveReminder" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+                  <Component id="btnBack" alignment="3" min="-2" pref="63" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="68" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblCreateReminderTitle">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Create Reminder "/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblFoodItemId">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Food Item ID"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblFoodName">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Food Name"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblExpiryDate">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Expiry Date"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblReminderType">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reminder Type"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDaysBeforeExpiry">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Days Before Expiry"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnSaveReminder">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Save Reminder"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnSaveReminderActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="btnBack">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Back"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBackActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="TFFoodItemId">
+    </Component>
+    <Component class="javax.swing.JTextField" name="TFFoodName">
+    </Component>
+    <Component class="javax.swing.JTextField" name="TFExpiryDate">
+    </Component>
+    <Component class="javax.swing.JComboBox" name="cmbReminderType">
+      <Properties>
+        <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+          <StringArray count="2">
+            <StringItem index="0" value="Expiry Reminder"/>
+            <StringItem index="1" value="Custom Reminder"/>
+          </StringArray>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>
+      </AuxValues>
+    </Component>
+    <Component class="javax.swing.JSpinner" name="spnDaysBeforeExpiry">
+      <Properties>
+        <Property name="model" type="javax.swing.SpinnerModel" editor="org.netbeans.modules.form.editors2.SpinnerModelEditor">
+          <SpinnerModel initial="3" maximum="365" minimum="0" numberType="java.lang.Integer" stepSize="1" type="number"/>
+        </Property>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
