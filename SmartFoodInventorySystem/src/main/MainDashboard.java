@@ -1,5 +1,6 @@
 package main;
 
+import inventory.InventoryFrame;
 import tracker.TrackerFrame;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -98,9 +99,7 @@ public class MainDashboard extends JFrame {
 
     // Standard navigation methods specified in the UML Class Diagram
     public void openInventory() {
-        JOptionPane.showMessageDialog(this, 
-            "Food Inventory Management module is being integrated.", 
-            "Navigation Notice", JOptionPane.INFORMATION_MESSAGE);
+        new TrackerFrame().setVisible(true);
     }
 
     public void openReminders() {
