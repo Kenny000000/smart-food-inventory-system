@@ -1,5 +1,7 @@
 package main;
 
+import inventory.InventoryFrame;
+import reminders.ReminderDashboard;
 import tracker.TrackerFrame;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -98,15 +100,14 @@ public class MainDashboard extends JFrame {
 
     // Standard navigation methods specified in the UML Class Diagram
     public void openInventory() {
-        JOptionPane.showMessageDialog(this, 
-            "Food Inventory Management module is being integrated.", 
-            "Navigation Notice", JOptionPane.INFORMATION_MESSAGE);
+        new TrackerFrame().setVisible(true);
     }
 
     public void openReminders() {
-        JOptionPane.showMessageDialog(this, 
-            "Expiry Alerts & Reminders module is being integrated.", 
-            "Navigation Notice", JOptionPane.INFORMATION_MESSAGE);
+       reminders.ReminderDashboard dashboard = 
+               new reminders.ReminderDashboard();
+       dashboard.setVisible(true);
+       this.dispose();
     }
 
     public void openTracker() {
