@@ -1,1 +1,0 @@
-smart.food.inventory.ViewandSearchReminder
