@@ -1,6 +1,7 @@
 package main;
 
 import inventory.InventoryFrame;
+import reminders.ReminderDashboard;
 import tracker.TrackerFrame;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
@@ -103,9 +104,10 @@ public class MainDashboard extends JFrame {
     }
 
     public void openReminders() {
-        JOptionPane.showMessageDialog(this, 
-            "Expiry Alerts & Reminders module is being integrated.", 
-            "Navigation Notice", JOptionPane.INFORMATION_MESSAGE);
+       reminders.ReminderDashboard dashboard = 
+               new reminders.ReminderDashboard();
+       dashboard.setVisible(true);
+       this.dispose();
     }
 
     public void openTracker() {
