@@ -9,7 +9,17 @@ import java.awt.event.ActionListener;
 
 public class MainDashboard extends JFrame {
 
+    // Khớp các thuộc tính quản lý theo UML Class Diagram
+    // private InventoryManager inventory;
+    // private RemindManager reminders;
+    // private RecordManager records;
+
     public MainDashboard() {
+        // Khởi tạo các manager theo sơ đồ thiết kế
+        // this.inventory = new InventoryManager();
+        // this.reminders = new RemindManager();
+        // this.records = new RecordManager();
+
         setTitle("Smart Food Inventory System - Main Dashboard (SDG 12)");
         setSize(650, 480);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -56,28 +66,25 @@ public class MainDashboard extends JFrame {
         footerPanel.add(lblFooter);
         add(footerPanel, BorderLayout.SOUTH);
 
+        // Gắn sự kiện gọi các phương thức chuẩn theo UML
         btnInventory.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(MainDashboard.this, 
-                    "Food Inventory Management module is being integrated.", 
-                    "Navigation Notice", JOptionPane.INFORMATION_MESSAGE);
+                openInventory();
             }
         });
 
         btnReminders.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(MainDashboard.this, 
-                    "Expiry Alerts & Reminders module is being integrated.", 
-                    "Navigation Notice", JOptionPane.INFORMATION_MESSAGE);
+                openReminders();
             }
         });
 
         btnTracker.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new TrackerFrame().setVisible(true);
+                openTracker();
             }
         });
 
@@ -87,6 +94,24 @@ public class MainDashboard extends JFrame {
                 System.exit(0);
             }
         });
+    }
+
+    // Các phương thức chuẩn theo sơ đồ UML Class Diagram
+    public void openInventory() {
+        JOptionPane.showMessageDialog(this, 
+            "Food Inventory Management module is being integrated.", 
+            "Navigation Notice", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    public void openReminders() {
+        JOptionPane.showMessageDialog(this, 
+            "Expiry Alerts & Reminders module is being integrated.", 
+            "Navigation Notice", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    public void openTracker() {
+        // Mở trực tiếp module Tracker của Hải Anh
+        new TrackerFrame().setVisible(true);
     }
 
     public static void main(String[] args) {
